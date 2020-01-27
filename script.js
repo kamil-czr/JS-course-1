@@ -1,8 +1,13 @@
-alert ("Hello World!");
+var youLikeMeat = true;
+var myNum = 10;
+
+if (youLikeMeat){
+
+        document.write("Here is the meaty menu...");
 
 
-// second alert
-alert ("Drugi alert")
+} else {
 
+        document.write("you hate meat")
 
-
+}
