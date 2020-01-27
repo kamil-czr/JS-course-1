@@ -1,9 +1,11 @@
-function getAverage (a,b){
+var a = 6;
+var b = 5;
 
-        var average = (a + b) / 2;
-        console.log(average);
-        return average;
+if (isNaN(a)){
+
+        console.log("it's not a nubmer");
+
+} else {
+
+    console.log("meaning of life is " + (a * b));
 }
-
-var myResult = getAverage(7,8);
-console.log("the average is " + myResult);
