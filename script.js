@@ -1,3 +1,5 @@
+console
+
 var myArray = [];
 
 myArray[0] = 25;
@@ -18,8 +20,13 @@ var myCar2 = {
     driver: "Kamil", 
     drive: function(speed, time){
         console.log("traveled distance is",speed * time);
+    },
+
+    logDriver: function(){
+        console.log("Driver name is " + this.driver);
     }
 };
 
+myCar2.logDriver();
 console.log("Max speed is", myCar2.maxSpeed);
 myCar2.drive(50, 3);
