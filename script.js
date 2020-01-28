@@ -1,41 +1,16 @@
-/*
-var myCar = {
-    
-    maxSpeed: 70, 
-    driver: "Kamil", 
-    drive: function(speed, time){
-        console.log("traveled distance is",speed * time);
-    },
+/* var myPastDate = new Date(1985, 3, 16, 10, 39, 45);
+var myFutureDate = new Date(2020, 0, 28, 1, 16, 39);
 
-    logDriver: function(){
-        console.log("Driver name is " + this.driver);
-    }
-}; 
-*/
+console.log(myPastDate);
+console.log(myFutureDate); */
 
+var birthday = new Date (1985, 0, 15, 11, 15, 25);
+var birthday2 = new Date (1985, 0, 15, 11, 15, 25);
 
-var Car = function(maxSpeed, driver){
+console.log(birthday.getTime());
 
-    this.maxSpeed = maxSpeed
-    this.driver = driver
-    this.drive = function(speed, time){
-        console.log("traveled distance is",speed * time);
-    };
-    this.logDriver = function(){
-        console.log("Driver name is " + this.driver);
-    };
-    this.logMaxSpeed = function(){
-        console.log("Max speed is " + this.maxSpeed);
-    };
-
+if(birthday.getTime == birthday2.getTime){
+    console.log("birthdays are the same");
+} else {
+    console.log("birthdays are different");
 }
-
-var myCar = new Car(70, "Darek");
-var myCar2 = new Car(100, "Wojtek");
-var myCar3 = new Car(120, "Piotr");
-var myCar4 = new Car(90, "Marek");
-var myCar5 = new Car(110, "Dawid");
-
-myCar3.logMaxSpeed();
-myCar4.drive(30,5);
-myCar3.logDriver();
