@@ -1,16 +1,17 @@
-/* var myPastDate = new Date(1985, 3, 16, 10, 39, 45);
-var myFutureDate = new Date(2020, 0, 28, 1, 16, 39);
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-console.log(myPastDate);
-console.log(myFutureDate); */
+button.onclick = function(){
 
-var birthday = new Date (1985, 0, 15, 11, 15, 25);
-var birthday2 = new Date (1985, 0, 15, 11, 15, 25);
+        if(content.className == "open"){
+                //shrink the box
+            content.className = "";
+            button.innerHTML = "Show Less";
+        } else {
+            //expand the box
+            content.className = "open";
+            button.innerHTML = "Show Less";
+        }
 
-console.log(birthday.getTime());
 
-if(birthday.getTime == birthday2.getTime){
-    console.log("birthdays are the same");
-} else {
-    console.log("birthdays are different");
 }
